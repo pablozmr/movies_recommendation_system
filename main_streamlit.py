@@ -115,10 +115,10 @@ def get_director(nombre_director):
     
     
 
-movies_dict = pickle.load(open('C:/Users/pablo/OneDrive/Escritorio/Henry/Labs/Dataset/dataset/data/movies_dict.pkl', 'rb'))
+movies_dict = pickle.load(open('/data/movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-primer_similarity = pickle.load(open('C:/Users/pablo/OneDrive/Escritorio/Henry/Labs/Dataset/dataset/data/primer_similarity.pkl', 'rb'))
-segundo_similarity = pickle.load(open('C:/Users/pablo/OneDrive/Escritorio/Henry/Labs/Dataset/dataset/data/segundo_similarity.pkl', 'rb'))
+primer_similarity = pickle.load(open('/data/primer_similarity.pkl', 'rb'))
+segundo_similarity = pickle.load(open('/data/segundo_similarity.pkl', 'rb'))
 similarity = np.concatenate((primer_similarity, segundo_similarity), axis=0)
 
 ######################################## Configuración #################################
@@ -132,16 +132,16 @@ st.set_page_config(
 ######################################### Cabecera ######################################
 col1, col2, col3 = st.columns(3)
 with col1:
-    imghead = Image.open('C:/Users/pablo/OneDrive/Escritorio/Henry/Labs/Dataset/Dataset/images/peli2.png')
+    imghead = Image.open('images/peli2.png')
     st.image(imghead)
     
 with col2:
-    imghead = Image.open('C:/Users/pablo/OneDrive/Escritorio/Henry/Labs/Dataset/Dataset/images/peli6.png')
+    imghead = Image.open('images/peli6.png')
     st.image(imghead)
 
     
 with col3:
-    imghead = Image.open('C:/Users/pablo/OneDrive/Escritorio/Henry/Labs/Dataset/Dataset/images/peli5.png')
+    imghead = Image.open('images/peli5.png')
     st.image(imghead)
 
 st.markdown("<h1 style='text-align: center;'>Sistema de recomendacion de peliculas</h1>", unsafe_allow_html=True)
