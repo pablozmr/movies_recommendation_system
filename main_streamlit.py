@@ -115,10 +115,10 @@ def get_director(nombre_director):
     
     
 
-movies_dict = pickle.load(open('/data/movies_dict.pkl', 'rb'))
+movies_dict = pickle.load(open('data/movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
-primer_similarity = pickle.load(open('/data/primer_similarity.pkl', 'rb'))
-segundo_similarity = pickle.load(open('/data/segundo_similarity.pkl', 'rb'))
+primer_similarity = pickle.load(open('data/primer_similarity.pkl', 'rb'))
+segundo_similarity = pickle.load(open('data/segundo_similarity.pkl', 'rb'))
 similarity = np.concatenate((primer_similarity, segundo_similarity), axis=0)
 
 ######################################## Configuración #################################
