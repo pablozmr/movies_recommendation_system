@@ -12,19 +12,19 @@ Estructura de contenido
 1. informe.html: Este archivo guarda el EDA generado con pandas.profiling.
 2. main_streamlit.py: Archivo de Python que usamos para ejecutar la aplicacion en Streamlit.
 3. data:
-        - movies_credits.csv: Este archivo es el dataset limpio para aplicar las funciones.
-        - movies_recomendacion.csv: Este archivo es el dataset para aplicar el sistema de recomendacion.
-        - primer_similarity.pkl / segundo_similarity.pkl: Estos archivos son el array de arrays que devuelve el entrenamiento del modelo de machine learning que luego se concatenan en main_streamlit.py ya que pensan mas de 25mbs juntos y github no permite archivos pesados.
+- movies_credits.csv: Este archivo es el dataset limpio para aplicar las funciones.
+- movies_recomendacion.csv: Este archivo es el dataset para aplicar el sistema de recomendacion.
+- primer_similarity.pkl / segundo_similarity.pkl: Estos archivos son el array de arrays que devuelve el entrenamiento del modelo de machine learning que luego se concatenan en main_streamlit.py ya que pensan mas de 25mbs juntos y github no permite archivos pesados.
 movies_dict.pkl: Este archivo sirve para poder tener a disposicion los titulos y la info de las peliculas en los selectbox de streamlit.
 5. notebooks:
-        - movies.ipynb: Este Notebook Jupyter se debe correr primero para hacer la transformacion de los datos y generar movies_credits.csv
-        - movies_recomendacion.ipynb: Este Notebook Jupyter se ejecuta luego de movies.ipynb. Trabaja con movies_credits.csv para poder transformar los datos que             necesitamos para entrenar el modelo de machine learning.
-        - movies_funciones.ipynb: Este Notebook Jupyter se ejecuta por ultimo. Aca creamos las funciones para adquirir informacion de las peliculas, productoras y            demas, y ademas creamos la funcion de recomendacion para las peliculas, tambien generamos movies_dict.pkl, movies_dataset.pkl, primer_similarity.pkl y              segundo_similarity.pkl
+- movies.ipynb: Este Notebook Jupyter se debe correr primero para hacer la transformacion de los datos y generar movies_credits.csv
+- movies_recomendacion.ipynb: Este Notebook Jupyter se ejecuta luego de movies.ipynb. Trabaja con movies_credits.csv para poder transformar los datos que             necesitamos para entrenar el modelo de machine learning.
+- movies_funciones.ipynb: Este Notebook Jupyter se ejecuta por ultimo. Aca creamos las funciones para adquirir informacion de las peliculas, productoras y            demas, y ademas creamos la funcion de recomendacion para las peliculas, tambien generamos movies_dict.pkl, movies_dataset.pkl, primer_similarity.pkl y              segundo_similarity.pkl
 6. images:
-        - movies_recomendacion.png
-        - peli2.png
-        - peli5.png
-        - peli6.png
+- movies_recomendacion.png
+- peli2.png
+- peli5.png
+- peli6.png
 7. requirements.txt: Este archivo guarda las librerias del proyecto.
 
 
