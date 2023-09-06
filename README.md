@@ -1,6 +1,6 @@
 # Sistema de recomendacion de peliculas
 Hola! Este es un proyecto en el cual empleamos herramientas de machine learning para brindar una recomendacion segun la pelicula que el usuario elija. Ademas tiene algunas funciones para adquirir informacion acerca de las peliculas, productoras, directores y algunas cosas mas. 
-<img src=https://github.com/pablozmr/recommendation_system/blob/main/images/movies_recomendacion.png>
+<img src=https://github.com/pablozmr/recommendation_system/images/blob/main/movies_recomendacion.png>
 
 ## Requerimientos del proyecto:
 Para poder trabajar con los datos de forma deseada, lo primero que debemos hacer es ver la calidad de los datos en los datasets que disponemos, luego manipularlos de tal forma que nos sean utiles. Para la transformacion de los datos utilizamos las librerias Pandas y Numpy de python.
